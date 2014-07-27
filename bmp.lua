@@ -17,14 +17,6 @@ function pixel(a,offset,x,y, bw, bh)
 	end
 	pxoffset = datalength - (y * bytes_width)
 	pxoffset = pxoffset - (bytes_width - x * 3)
-	--[[print("bytesperline"..tostring(bytes_width))
-	print("datalength"..tostring(datalength))
-	print("offset"..tostring(offset))
-	print("x"..tostring(x))
-	print("y"..tostring(y))
-	print("bw"..tostring(bw))
-	print("bh"..tostring(bh))
-	print("calcoffset"..tostring(pxoffset))]]--
 	local r =  a[pxoffset + 3]
 	local g =  a[pxoffset + 2]
 	local b =  a[pxoffset+1]
